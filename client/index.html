@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Car Price Prediction</h2>
+        
+        <form id="predictionForm">
+            <label for="model">Car Model:</label>
+            <select id="model" required>
+                <option value="">Select Model</option>
+            </select>
+
+            <label for="make_year">Make Year:</label>
+            <input type="number" id="make_year" required>
+
+            <label for="engine_capacity">Engine Capacity (cc):</label>
+            <input type="number" id="engine_capacity" required>
+
+            <label for="km_driven">Kilometers Driven:</label>
+            <input type="number" id="km_driven" required>
+
+            <label for="price">Original Price:</label>
+            <input type="number" id="price" required>
+
+            <label for="owners">Number of Owners:</label>
+            <input type="number" id="owners" required>
+
+            <label for="fuel_type">Fuel Type:</label>
+            <select id="fuel_type" required>
+                <option value="1">Diesel</option>
+                <option value="2">Petrol</option>
+                <option value="3">CNG</option>
+                <option value="4">Electric</option>
+            </select>
+
+            <label for="transmission">Transmission:</label>
+            <select id="transmission" required>
+                <option value="1">Manual</option>
+                <option value="2">Automatic</option>
+            </select>
+
+            <button type="submit">Predict Price</button>
+        </form>
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
